@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+}
+
+body {
+    margin: 0px;
+    background: rgb(168,182,191);
+    background: linear-gradient(90deg, rgba(168,182,191,1) 0%, rgba(220,225,225,1) 25%, rgba(191,200,209,1) 50%, rgba(164,176,188,1) 75%, rgba(142,160,174,1) 100%);
+    background: url(https://www.publicdomainpictures.net/pictures/250000/velka/abstract-background-1523460759vjF.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+/* Menu */
+   ul {
+    list-style: none;
+  }
+
+  a {
+    color: #aaaebc;
+    text-decoration: none;
+  }
+  
+  hr {
+    border-color: var(--hr-color);
+    margin: 20px 0px;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    background-color: #1a1c1d;
+    padding: 25px 0px;
+    font: 22px sans-serif;
+  }
+  
+  .menu li {
+    margin-right: 70px;
+  }
+  
+  .menu a {
+    position: relative;
+    display: block;
+    padding: 0px;
+  }
+  
+  .menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .menu a:hover::before {
+    transform: scaleX(1);
+  }
+
+  /* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .menu[data-animation="center"] a::before {
+    transform-origin: center;
+  }
+
+  /*section*/
+  section{
+    height: 100%;
+    width: auto;
+	  margin: 10px 110px;
+    float: left;
+    
+  }
+  article{
+    background-color: rgb(31, 31, 31);
+    width: 700px;
+    height: 350px;
+    margin: 25px 20px;
+    padding: 15px 50px;
+    box-shadow: 0px 1px 5px #777;
+    float: left;
+    position: relative;
+  }
+  h2{
+    font-family: 'Oswald', sans-serif;
+    color: rgb(253, 252, 245);
+    font-size: 2em;
+  }
+  section 
+  .info{
+    padding: 10px 0px;
+    text-align: justify;
+    float: left;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(90deg, #6bbdff, #6c5ad4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8em;
+    line-height: 1.1em;
+  }
+ .down{
+   clear: left;
+   margin: 0%;
+   height: 100%;
+   width: 100%;
+   text-align: center;
+   background-color: rgb(94, 94, 94) ;
+   opacity: 0.5;
+   color: rgb(255, 255, 255);
+   font-size: 1.8em;
+ }
+ .down
+ p{
+   margin-top: 15px;
+   margin-bottom: 15px;
+ }
